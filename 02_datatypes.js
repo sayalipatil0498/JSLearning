@@ -24,4 +24,4 @@ console.log("value of city variable is:",city);
 console.log("type of city variable is:",typeof city);
 
 age="32"; //anything inclosed in single quote or double quote this is called string
-console.log("typeof age"); 
+console.log("typeof age");  
