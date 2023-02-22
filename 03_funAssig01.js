@@ -1,4 +1,4 @@
-console.log("------------------first---------------------");
+console.log("------------------first---------------------"); //function with no argu no return type
 function favoritePlayer(){
     console.log("My favorite player is: Dhoni");
     
@@ -10,7 +10,7 @@ function favoriteMovie(){
 }
 favoriteMovie();
 
-console.log("------------------second-----------------------");
+console.log("------------------second-----------------------"); //function with argument no return type
 
 function personalDetails(firstName, lastName, collegeName){
     console.log("My first Name is: ", firstName);
@@ -19,8 +19,8 @@ function personalDetails(firstName, lastName, collegeName){
 }
 personalDetails("Sayali", "Patil", "Shivaji University Kolhapur");
 
-console.log("-----------------third------------------------");
-function swapValuesDude(name1, name2 ,val1, val2){
+console.log("-----------------third------------------------"); //to avoid duplicate data 
+function swapValuesDude(name1, name2 ){
     console.log("Before Swap:" , name1, name2,);
     var temp=name1;
     name1= name2;
@@ -31,7 +31,7 @@ function swapValuesDude(name1, name2 ,val1, val2){
 swapValuesDude("Virat", "Anushka");
 swapValuesDude(1000, 2000);
 
-console.log("-------------------fourth------------------------");
+console.log("-------------------fourth------------------------"); // function with argument and return type
 function addThreeValues(n1,n2,n3){
 var sum;
 sum= n1 + n2 + n3 ;
