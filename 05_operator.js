@@ -41,4 +41,22 @@ var marks = 35;
 console.log(marks >= 35); //  greater than equal
 console.log(marks <= 35); // less than equal
 
+var marks =70;
+var result = marks >=60 ? "Allow him for interviwe" : "dont allow";
+console.log(result);
+
+var age = 22;
+var res = age >= 21 ? "congratulations..": "no next time";
+console.log(res);
+
+console.log("even or odd");
+var myNumber = 7;
+var result = myNumber%2 == 0 ? "Even": "odd";
+console.log(result);
+
+var num1 = 10;
+var num2 = 20;
+var numResult = num1> num2 ? num1 : num2;
+console.log(numResult);
+
 
