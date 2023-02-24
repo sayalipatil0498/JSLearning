@@ -9,7 +9,7 @@ greaterNumber(899 , 899);
 
 console.log("---------step2------------");
 function inEvenorOddNum(val1){
-    var valResult = val1 % 2 == 0 ? true : false;
+    var valResult = val1 % 2 == 0 ? true : false
    
     return valResult;
 
@@ -33,6 +33,6 @@ return result;
 var str1result = wordLength("JavaScript");
 console.log(`Word  "Javascript" has ${str1result} length`);
 var str1result = wordLength("Developer");
-console.log(`Word  "Developer" has ${str1result} length`);
+console.log(`Word  "" has ${str1result} length`);
 var str1result = wordLength("Google");
 console.log(`Word  "Google" has ${str1result} length`);
