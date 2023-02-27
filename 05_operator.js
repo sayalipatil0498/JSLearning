@@ -59,4 +59,8 @@ var num2 = 20;
 var numResult = num1> num2 ? num1 : num2;
 console.log(numResult);
 
+console.log("Difference bet === or ==");
+var myName = 10;
+typeof myName
+
 
