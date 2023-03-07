@@ -1,5 +1,5 @@
 function factorialWordsCount(str){
-    if(str==null || str== undefined || (isNaN(str) && typeof str=="number")){
+    if(str== null || str== undefined || (isNaN(str) && typeof str=="number")){
        console.log(`Given string ${str} is invalid`);
     }else{
         console.log(`Given string is valid :${str}`);
@@ -20,11 +20,11 @@ function factorialWordsCount(str){
 
 var result = factorialWordsCount("Revision is the mother of sucess");
 console.log(result);
- var result = factorialWordsCount("We never fail,we always learn");
+ var result = factorialWordsCount("We never fail we always learn");
  console.log(result);
-var result =factorialWordsCount(null);
+var result = factorialWordsCount(null);
 console.log(result);
-var result =factorialWordsCount("");
+var result = factorialWordsCount(" ");
 console.log(result);
-var result =factorialWordsCount("Sayali Balaso Patil");
+var result = factorialWordsCount("Sayali Balaso Patil");
 console.log(result);
