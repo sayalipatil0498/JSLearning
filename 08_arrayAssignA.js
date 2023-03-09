@@ -48,7 +48,7 @@ console.log(subArray);
 console.log("=========Select Last 3 elements and log on console==========");
 var arraySeasonalFruits  = ["Banana","Orange", "Apple","Mango","Water Melon","Kiwi"];
 console.log(arraySeasonalFruits);
-const sub = arraySeasonalFruits.slice(arraySeasonalFruits.length - 3);
+const sub = arraySeasonalFruits.slice(arraySeasonalFruits.length-3);
 console.log(sub);
 
 
