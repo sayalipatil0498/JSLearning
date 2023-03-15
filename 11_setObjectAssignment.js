@@ -32,6 +32,7 @@ class Bank {
  console.log(bankSet);
 
 console.log("-------------------------Traverse set of element------------------------");
+
  for(const Bank of bankSet){
-    console.log(`Bank Name:${Bank.bankName}, Location:${Bank.location}`);
+    console.log(`Bank Name:${Bank.bankName}, Loacation is:${Bank.location}`);
  }
