@@ -31,3 +31,4 @@ var gender ="Female";
 console.log("Gender is:", gender);
 var isMarried ="Unmarried";
 console.log("Marrital Status is:", isMarried);
+ 
