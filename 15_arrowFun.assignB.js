@@ -9,19 +9,19 @@ class Employee {
 
 }
 const emp_anil=new Employee(22,"Anil","IT",50000,"TCS");
-console.log(emp_anil);
+//console.log(emp_anil);
 const emp_radha=new Employee(22,"Radha","HR",60000,"Wipro");
-console.log(emp_radha);
+//console.log(emp_radha);
 const emp_rishi=new Employee(22,"Rishi","Finance",65000,"TCS");
-console.log(emp_rishi);
+//console.log(emp_rishi);
 const emp_sonali=new Employee(22,"Sonali","Finance",90000,"Infy");
-console.log(emp_sonali);
+//console.log(emp_sonali);
 const emp_monika=new Employee(22,"Monika","IT",65000,"Wipro");
-console.log(emp_monika);
+//console.log(emp_monika);
 const emp_viny=new Employee(22,"Viny","IT",88000,"TCS");
-console.log(emp_viny);
+//console.log(emp_viny);
 const emp_mahi=new Employee(22,"Mah","HR",65000,"Infy");
-console.log(emp_mahi);
+//console.log(emp_mahi);
 console.log("--------------------Add all objects in an array----------------");
 arrayEmployees =[emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny,emp_mahi];
  console.log(arrayEmployees);
