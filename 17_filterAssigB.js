@@ -22,17 +22,33 @@ class Employee {
  
  
  arrayEmployees =[emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny,emp_mahi];
-let arrayFilter;
- arrayFilter = arrayEmployees.filter((element)=> {
-    if(element.emp_company=="TCS"){
- console.log(`Company Name:${element.emp_company},Employee Name:${element.emp_name}`);
- }
-});
+ const emp_company = arrayEmployees.filter((employee)=> {
+    return employee.emp_company=="TCS";
+ });
+ emp_company.forEach((employee) => {
+ console.log(`Company Name:${employee.emp_company},Employee Name:${employee.emp_name}`);
+ });
+
 
  console.log("------------------Find average salary-------------");
-arrayFilter= arrayEmployees.filter((element)=> {
-    if(element.emp_company=="Wipro"){
-    console.log(`company name:${element.emp_company}`);
-}
+const emp_salary = arrayEmployees.filter((element)=> {
+    return element.emp_company=="Wipro";
 });
+let totalSalary=0;
+emp_salary.forEach((employee)=>{
+    totalSalary=totalSalary+employee.emp_salary;
+});
+const avg=totalSalary/emp_salary.length
+console.log(`Average salary of employees from "Wipro":${avg}`);
+console.log(`--------------------------------Step-3-----------------------`);
+const emp_salarys = arrayEmployees.filter((element) =>{
+   return (element.emp_company=="Wipro"  || element.emp_company=="Infosys" ) ;
+});
+let totalSalarys = 0;
+emp_salarys.forEach((element)=> {
+    totalSalarys =totalSalarys+ element.emp_salary;
+});
+const avgs=totalSalarys/emp_salary.length
+    console.log(`Average salary of Employees from "Wipro" and "Infosys : ${avgs}`);
+
  
