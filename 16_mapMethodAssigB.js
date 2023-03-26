@@ -28,3 +28,15 @@ const arrayDept = arrayEmployees.map((element)=>{
     return element.emp_dept;
 });
 console.log(arrayDept);
+console.log("---------Get list of employee id-------------");
+const arrayID = arrayEmployees.map((element)=>{
+    return element.emp_id;
+});
+console.log(arrayID);
+console.log("----------get list of employees working in tcs---------------");
+const arrayNew=[];
+const emp_company = arrayEmployees.map((element)=>{
+    arrayNew[element.emp_name]=element.emp_company;
+    return arrayNew;
+});
+console.log(`emp_company`);
