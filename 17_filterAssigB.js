@@ -31,24 +31,25 @@ class Employee {
 
 
  console.log("------------------Find average salary-------------");
-const emp_salary = arrayEmployees.filter((element)=> {
+ let average2;
+const avrg = arrayEmployees.filter((element)=> {
     return element.emp_company=="Wipro";
 });
-let totalSalary=0;
-emp_salary.forEach((employee)=>{
-    totalSalary=totalSalary+employee.emp_salary;
-});
-const avg=totalSalary/emp_salary.length
-console.log(`Average salary of employees from "Wipro":${avg}`);
+let reduce= avrg.reduce((element,value)=>{
+    return element.emp_salary+value.emp_salary;
+})
+average2=reduce/avrg.length;
+console.log(average2);
+
 console.log(`--------------------------------Step-3-----------------------`);
-const emp_salarys = arrayEmployees.filter((element) =>{
-   return (element.emp_company=="Wipro"  || element.emp_company=="Infosys" ) ;
+let average;
+const avg = arrayEmployees.filter((element)=>{
+    return element.emp_company=="Wipro" || element.emp_company=="Infy";
 });
-let totalSalarys = 0;
-emp_salarys.forEach((element)=> {
-    totalSalarys =totalSalarys+ element.emp_salary;
+let reduce1 = avg.reduce((element,value)=>{
+   return element.emp_salary + value.emp_salary; 
 });
-const avgs=totalSalarys/emp_salary.length
-    console.log(`Average salary of Employees from "Wipro" and "Infosys : ${avgs}`);
+ average = reduce1/avg.length;
+    console.log(average);
 
  
