@@ -41,15 +41,15 @@ let reduce= avrg.reduce((element,value)=>{
 average2=reduce/avrg.length;
 console.log(average2);
 
-console.log(`--------------------------------Step-3-----------------------`);
-let average;
-const avg = arrayEmployees.filter((element)=>{
+console.log(`--------------------------------Step-3-----------------------`);;
+const emp_salarys = arrayEmployees.filter((element)=>{
     return element.emp_company=="Wipro" || element.emp_company=="Infy";
 });
-let reduce1 = avg.reduce((element,value)=>{
-   return element.emp_salary + value.emp_salary; 
+let totalSalary=0;
+ emp_salarys.reduce((element)=>{
+totalSalary=totalSalary+ element.emp_salarys ;
 });
- average = reduce1/avg.length;
+ const average = totalSalary/emp_salarys.length;
     console.log(average);
 
  
