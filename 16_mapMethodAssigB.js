@@ -34,9 +34,14 @@ const arrayID = arrayEmployees.map((element)=>{
 });
 console.log(arrayID);
 console.log("----------get list of employees working in tcs---------------");
-const arrayNew=[];
-const emp_company = arrayEmployees.map((element)=>{
-    arrayNew[element.emp_name]=element.emp_company;
-    return arrayNew;
+const arrayId =[];
+arrayEmployees.map((currentvalue)=>{
+     return arrayId.push(currentvalue.emp_id);
 });
-console.log(`emp_company`);
+console.log(arrayId);
+arrayEmployees.map((element)=>{
+ return element.emp_company=="TCS";
+});
+ 
+console.log(`Name:${emp_name}`);
+ 
